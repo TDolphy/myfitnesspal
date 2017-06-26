@@ -31,7 +31,7 @@ class MealsController extends Controller
      */
     public function create(Request $request)
     {
-        dump($request->user());die();
+        // dump($request->user());die();
         return view('meals.create')->withUser($request->user());
     }
 

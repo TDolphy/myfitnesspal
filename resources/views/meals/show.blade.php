@@ -13,7 +13,7 @@
 		<br>
 
 		<span class="meal-data label label-pill label-primary">
-			{{$meal->foods}}kCal
+			{{(($meal->foods->sum('protein'))*4)+(($meal->foods->sum('carbohydrate'))*4)+(($meal->foods->sum('fat'))*9)}}kCal
 		</span>
 
 		<span class="meal-data label label-pill label-default">
